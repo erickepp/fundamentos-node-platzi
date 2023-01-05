@@ -9,7 +9,7 @@ function leer(ruta, cb) {
 function escribir(ruta, contenido, cb) {
     fs.writeFile(ruta, contenido, function(err, data) {
         if (err) {
-            console.error('No he podido escribirlo', error);
+            console.error('No he podido escribirlo', err);
         } else {
             console.log('Se ha escrito correctamente');
         }
